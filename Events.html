@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="events-body">
+    <select id="languageSelect">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+      </select>
+    <div id="productPopup" class="product-popup" style="display: none;">
+        <div class="product-popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Add New Product</h2>
+            <input type="text" id="newProductName" placeholder="Product Name">
+            <input type="text" id="newProductPrice" placeholder="Price">
+            <input type="text" id="newProductImage" placeholder="Image URL">
+            <textarea id="newProductDescription" placeholder="Description"></textarea>
+            <button id="addNewProduct">Add Product</button>
+        </div>
+    </div>
+
+    <div class="sort-buttons grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-9 mx-auto mt-10" style="max-width: 700px;">
+        <button id="sortTitleBtn">Sort by Title</button>
+        <button id="sortPriceBtn">Sort by Price</button>
+        <input id="searchInput" placeholder="Search by name"></input>
+        <button id="addProductBtn">Add +</button>
+    </div>
+    <div class="products">
+        <div id="eventsGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-9 mx-auto" style="max-width: 700px;">
+    </div>
+    </div>
+    <div class="next-site"><a href="index.html"><button id="heroButton" class="hero-button">Let's go climbing!</button></a></div>
+    <script src="events.js"></script>
+</body>
+</html>
