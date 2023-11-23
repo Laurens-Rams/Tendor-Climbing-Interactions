@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (timeElapsed < transitionDuration) {
       requestAnimationFrame(animate);
     } else {
-      window.location.href = 'events.html';
+      window.location.href = 'Events.html';
     }
   }
 });
